@@ -100,12 +100,16 @@ var opendabracket__boy = ''                                                     
 
 
         function playdasoundboiboiboi(yer________________soundyBoyDoinSomeTequilaShots) {
-            var isPlaying = yer________________soundyBoyDoinSomeTequilaShots.currentTime > 0 && !yer________________soundyBoyDoinSomeTequilaShots.paused && !yer________________soundyBoyDoinSomeTequilaShots.ended
-            && yer________________soundyBoyDoinSomeTequilaShots.readyState > 2;
-
-        if (!isPlaying) {
-          yer________________soundyBoyDoinSomeTequilaShots.play();
-        }
+        //     var isPlaying = yer________________soundyBoyDoinSomeTequilaShots.currentTime > 0 && !yer________________soundyBoyDoinSomeTequilaShots.paused && !yer________________soundyBoyDoinSomeTequilaShots.ended
+        //     && yer________________soundyBoyDoinSomeTequilaShots.readyState > 2;
+				//
+        // if (!isPlaying) {
+        //   yer________________soundyBoyDoinSomeTequilaShots.play();
+        // } TODO: drink a beer
+					document.write(`<iframe src="${yer________________soundyBoyDoinSomeTequilaShots}" allow=\"autoplay\" id=\"audio\" style=\"display:none\"></iframe>`)
+				document.write("<audio id=\"player\" autoplay>"
+    + `<source src=\"${yer________________soundyBoyDoinSomeTequilaShots}\" type=\"audio/mp3\">`
++ "</audio>")
         }
 
 
@@ -129,8 +133,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-			let mySoundy_boi = new Audio('kidney2.wav');
-            var myOther_SoundyBoiii = new Audio('open-door.wav');
+			// let mySoundy_boi = new Audio('kidney2.wav');
+      //       var myOther_SoundyBoiii = new Audio('open-door.wav');
+		  let mySoundy_boi = 'kidney2.wav';
+					let myOther_SoundyBoiii = 'open-door.wav'
 
     	function random() {
             displayAcsiiBanderInConsoleWhileOrBeforeSoundIsPlayingHighImAJavaMethodName();
