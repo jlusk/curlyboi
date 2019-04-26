@@ -137,13 +137,29 @@ function getRandomInt(min, max) {
       //       var myOther_SoundyBoiii = new Audio('open-door.wav');
 		  let mySoundy_boi = 'kidney2.wav';
 					let myOther_SoundyBoiii = 'open-door.wav'
+					const theLegend_ofCurly_and_his_gold_is_one_of_the_greatestStoriesEverTold = 'curlysgold.wav';
 
+			function im_gonna_write_my_own_func_to_compare_strings_and_there_is_nothing_you_can_do_to_stop_me(thing_one, thing_two) {
+				var match = false
+				if (thing_one.length != thing_two.length) return false
+				thing_one.split('').forEach(function (letter, idx) {
+					try {
+					  if (thing_two[idx] != letter) return false
+				  } catch(e) {
+						return false
+					}
+				})
+				return true
+			}
     	function random() {
             displayAcsiiBanderInConsoleWhileOrBeforeSoundIsPlayingHighImAJavaMethodName();
     		var randyBoy = Math.random();
     		console.log(randyBoy);
         var curlyBoy = randyBoy > 0.5 ? (randyBoy > 0.95 ? (randyBoy > 0.97 ? goldyBoiCominThru____WatchOut : '{') : '{') : (randyBoy > 0.45 ? ']' : '}');
         if (['[', ']'].indexOf(curlyBoy) > -1){ playdasoundboiboiboi(mySoundy_boi); curlyBoy == '[' ? console.log(opendabracket__boy):console.log(closeyBracketyMan)}
+				else if (im_gonna_write_my_own_func_to_compare_strings_and_there_is_nothing_you_can_do_to_stop_me(curlyBoy, goldyBoiCominThru____WatchOut)) {
+					playdasoundboiboiboi(theLegend_ofCurly_and_his_gold_is_one_of_the_greatestStoriesEverTold);
+				}
         else { playdasoundboiboiboi(myOther_SoundyBoiii); console.log(curlyBoy == '}'?closey_Boy:openBoy)}
         document.write("<span>" + curlyBoy + "</span>");
         var span = document.getElementsByTagName('span');
