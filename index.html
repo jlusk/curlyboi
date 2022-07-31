@@ -106,10 +106,50 @@ var opendabracket__boy = ''                                                     
         // if (!isPlaying) {
         //   yer________________soundyBoyDoinSomeTequilaShots.play();
         // } TODO: drink a beer
-					document.write(`<iframe src="${yer________________soundyBoyDoinSomeTequilaShots}" allow=\"autoplay\" id=\"audio\" style=\"display:none\"></iframe>`)
-				document.write("<audio id=\"player\" autoplay>"
-    + `<source src=\"${yer________________soundyBoyDoinSomeTequilaShots}\" type=\"audio/mp3\">`
-+ "</audio>")
+					// document.write(`<iframe src="${yer________________soundyBoyDoinSomeTequilaShots}" allow=\"autoplay\" id=\"audio\" style=\"display:none\"></iframe>`)
+// 				document.write("<audio id=\"player\" autoplay>"
+//     + `<source src=\"${yer________________soundyBoyDoinSomeTequilaShots}\" type=\"audio/mp3\">`
+// + "</audio>")
+/* THIS DOESNT WORK
+        var elemenohpee = document.getElementById('josh-lusk-is-cool'
+        );
+        let queueAreEssTeeYouVee = elemenohpee;
+        queueAreEssTeeYouVee.src = yer________________soundyBoyDoinSomeTequilaShots;
+        console.log(queueAreEssTeeYouVee)
+        console.warn(yer________________soundyBoyDoinSomeTequilaShots)
+        const dad = queueAreEssTeeYouVee.parentElement;
+        dad.play()
+        let fun = queueAreEssTeeYouVee.play() ;;;;
+        fun()
+        */
+;;;;;;;  ;;  ;;  ;;;;;;    ;;;;    ;;  ;;  ;;;;    ;;;;;;
+;;       ;;  ;;  ;;  ;;    ;;  ;;  ;;  ;;  ;;  ;;  ;;
+;;;;;;;  ;;  ;;  ;;;;;;    ;;  ;;  ;;  ;;  ;;  ;;  ;;;;;;
+     ;;  ;;  ;;  ;;        ;;  ;;  ;;  ;;  ;;  ;;  ;;
+;;;;;;;  ;;;;;;  ;;        ;;;;    ;;;;;;  ;;;;    ;;;;;;
+let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let xhr = new XMLHttpRequest();
+xhr.open('GET', yer________________soundyBoyDoinSomeTequilaShots);// 'audio-autoplay.wav');
+xhr.responseType = 'arraybuffer';
+console.log('hello')
+xhr.addEventListener('load', () => {
+  let playsound = (audioBuffer) => {
+    let source = audioCtx.createBufferSource();
+    source.buffer = audioBuffer;
+    source.connect(audioCtx.destination);
+    source.loop = false;
+    source.start();
+
+    setTimeout(function () {
+      let t = document.createElement('p');
+      playsound(audioBuffer);
+    }, 10000 + Math.random()*2500);
+  };
+
+  audioCtx.decodeAudioData(xhr.response).then(playsound);
+});
+xhr.send();
+
         }
 
 
@@ -245,3 +285,7 @@ function getRandomInt(min, max) {
 
 
     </head><body style="text-align: center;" onload="random();"></body></html>
+<!-- <audio id="internation-players-anthem" autoplay>
+      <source id="josh-lusk-is-cool" type="audio/mp3" autoplay>
+      src="${yer________________soundyBoyDoinSomeTequilaShots}" type="audio/mp3">`
+   </audio> this dxoesnt work anymore hehe-->
